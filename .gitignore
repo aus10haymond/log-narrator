@@ -1,41 +1,64 @@
-# Prerequisites
+# ---- Prerequisites ----
 *.d
 
-# Compiled Object files
+# ---- Compiled object files ----
 *.slo
 *.lo
 *.o
 *.obj
 
-# Precompiled Headers
+# ---- Precompiled headers ----
 *.gch
 *.pch
 
-# Linker files
+# ---- Linker / debug artifacts ----
 *.ilk
-
-# Debugger Files
 *.pdb
+*.dwo
+*.dSYM/
 
-# Compiled Dynamic libraries
+# ---- Compiled libraries ----
 *.so
 *.dylib
 *.dll
-
-# Fortran module files
+*.a
+*.lib
+*.lai
+*.la
 *.mod
 *.smod
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
+# ---- Executables ----
 *.exe
 *.out
 *.app
 
-# debug information files
-*.dwo
+# ---- Coverage / profiling ----
+*.profraw
+*.gcda
+*.gcno
+*.gcov
+
+# ---- Build outputs ----
+build/
+cmake-build-*/
+out/
+dist/
+
+# ---- CMake generated ----
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+CTestTestfile.cmake
+install_manifest.txt
+compile_commands.json
+
+# ---- Logs / temp files ----
+*.log
+*.tmp
+*.swp
+.DS_Store
+
+# ---- IDEs ----
+.vscode/
+.idea/
