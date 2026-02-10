@@ -62,3 +62,7 @@ compile_commands.json
 # ---- IDEs ----
 .vscode/
 .idea/
+
+# ---- Misc ----
+AGENTS.md
+plan.md
