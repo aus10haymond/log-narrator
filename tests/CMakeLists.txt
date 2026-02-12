@@ -15,6 +15,7 @@ endif()
 # Common test sources (reusable across test executables)
 set(COMMON_SOURCES
     ${PROJECT_SOURCE_DIR}/src/core/source_ref.cpp
+    ${PROJECT_SOURCE_DIR}/src/core/severity.cpp
     ${PROJECT_SOURCE_DIR}/src/io/file_reader.cpp
     ${PROJECT_SOURCE_DIR}/src/io/dir_scanner.cpp
     ${PROJECT_SOURCE_DIR}/src/io/stdin_reader.cpp
@@ -31,6 +32,8 @@ add_executable(unit_tests
     unit/test_status.cpp
     unit/test_record_framer.cpp
     unit/test_multiline_framer.cpp
+    unit/test_severity.cpp
+    unit/test_event.cpp
     ${COMMON_SOURCES}
 )
 

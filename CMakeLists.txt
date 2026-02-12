@@ -13,6 +13,7 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 add_executable(log_narrator
     src/main.cpp
     src/core/source_ref.cpp
+    src/core/severity.cpp
     src/io/file_reader.cpp
     src/io/dir_scanner.cpp
     src/io/stdin_reader.cpp
