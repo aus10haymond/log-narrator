@@ -16,9 +16,15 @@ add_executable(log_narrator
     src/io/file_reader.cpp
     src/io/dir_scanner.cpp
     src/io/stdin_reader.cpp
+    src/io/record_framer.cpp
+    src/io/multiline_framer.cpp
 )
 
 target_include_directories(log_narrator
     PRIVATE
         ${PROJECT_SOURCE_DIR}/include
 )
+
+# Enable testing
+enable_testing()
+add_subdirectory(tests)

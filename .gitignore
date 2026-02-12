@@ -58,6 +58,7 @@ compile_commands.json
 *.tmp
 *.swp
 .DS_Store
+temp_*
 
 # ---- IDEs ----
 .vscode/
