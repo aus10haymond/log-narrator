@@ -25,6 +25,7 @@ add_executable(log_narrator
     src/parsing/event_parser.cpp
     src/analysis/correlation_extractor.cpp
     src/analysis/event_index.cpp
+    src/analysis/episode_builder.cpp
 )
 
 target_include_directories(log_narrator

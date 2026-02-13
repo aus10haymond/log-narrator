@@ -27,6 +27,7 @@ set(COMMON_SOURCES
     ${PROJECT_SOURCE_DIR}/src/parsing/event_parser.cpp
     ${PROJECT_SOURCE_DIR}/src/analysis/correlation_extractor.cpp
     ${PROJECT_SOURCE_DIR}/src/analysis/event_index.cpp
+    ${PROJECT_SOURCE_DIR}/src/analysis/episode_builder.cpp
 )
 
 # Test executable
@@ -43,6 +44,7 @@ add_executable(unit_tests
     unit/test_timestamp_detector.cpp
     unit/test_parsing.cpp
     unit/test_analysis.cpp
+    unit/test_episode_builder.cpp
     ${COMMON_SOURCES}
 )
 
