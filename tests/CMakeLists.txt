@@ -25,6 +25,8 @@ set(COMMON_SOURCES
     ${PROJECT_SOURCE_DIR}/src/parsing/severity_detector.cpp
     ${PROJECT_SOURCE_DIR}/src/parsing/kv_extractor.cpp
     ${PROJECT_SOURCE_DIR}/src/parsing/event_parser.cpp
+    ${PROJECT_SOURCE_DIR}/src/analysis/correlation_extractor.cpp
+    ${PROJECT_SOURCE_DIR}/src/analysis/event_index.cpp
 )
 
 # Test executable
@@ -40,6 +42,7 @@ add_executable(unit_tests
     unit/test_event.cpp
     unit/test_timestamp_detector.cpp
     unit/test_parsing.cpp
+    unit/test_analysis.cpp
     ${COMMON_SOURCES}
 )
 

@@ -23,6 +23,8 @@ add_executable(log_narrator
     src/parsing/severity_detector.cpp
     src/parsing/kv_extractor.cpp
     src/parsing/event_parser.cpp
+    src/analysis/correlation_extractor.cpp
+    src/analysis/event_index.cpp
 )
 
 target_include_directories(log_narrator
