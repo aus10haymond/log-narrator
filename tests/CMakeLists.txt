@@ -21,6 +21,10 @@ set(COMMON_SOURCES
     ${PROJECT_SOURCE_DIR}/src/io/stdin_reader.cpp
     ${PROJECT_SOURCE_DIR}/src/io/record_framer.cpp
     ${PROJECT_SOURCE_DIR}/src/io/multiline_framer.cpp
+    ${PROJECT_SOURCE_DIR}/src/parsing/timestamp_detector.cpp
+    ${PROJECT_SOURCE_DIR}/src/parsing/severity_detector.cpp
+    ${PROJECT_SOURCE_DIR}/src/parsing/kv_extractor.cpp
+    ${PROJECT_SOURCE_DIR}/src/parsing/event_parser.cpp
 )
 
 # Test executable
@@ -34,6 +38,8 @@ add_executable(unit_tests
     unit/test_multiline_framer.cpp
     unit/test_severity.cpp
     unit/test_event.cpp
+    unit/test_timestamp_detector.cpp
+    unit/test_parsing.cpp
     ${COMMON_SOURCES}
 )
 

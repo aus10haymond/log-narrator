@@ -19,6 +19,10 @@ add_executable(log_narrator
     src/io/stdin_reader.cpp
     src/io/record_framer.cpp
     src/io/multiline_framer.cpp
+    src/parsing/timestamp_detector.cpp
+    src/parsing/severity_detector.cpp
+    src/parsing/kv_extractor.cpp
+    src/parsing/event_parser.cpp
 )
 
 target_include_directories(log_narrator
