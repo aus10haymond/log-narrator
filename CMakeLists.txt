@@ -29,6 +29,10 @@ add_executable(log_narrator
     src/analysis/stats.cpp
     src/analysis/stats_builder.cpp
     src/analysis/anomaly_detector.cpp
+    src/rules/rule_registry.cpp
+    src/rules/builtin/crash_loop_rule.cpp
+    src/rules/builtin/retry_to_timeout_rule.cpp
+    src/rules/builtin/error_burst_after_change_rule.cpp
 )
 
 target_include_directories(log_narrator
