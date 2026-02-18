@@ -26,6 +26,9 @@ add_executable(log_narrator
     src/analysis/correlation_extractor.cpp
     src/analysis/event_index.cpp
     src/analysis/episode_builder.cpp
+    src/analysis/stats.cpp
+    src/analysis/stats_builder.cpp
+    src/analysis/anomaly_detector.cpp
 )
 
 target_include_directories(log_narrator

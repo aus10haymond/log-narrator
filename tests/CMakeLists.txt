@@ -28,6 +28,9 @@ set(COMMON_SOURCES
     ${PROJECT_SOURCE_DIR}/src/analysis/correlation_extractor.cpp
     ${PROJECT_SOURCE_DIR}/src/analysis/event_index.cpp
     ${PROJECT_SOURCE_DIR}/src/analysis/episode_builder.cpp
+    ${PROJECT_SOURCE_DIR}/src/analysis/stats.cpp
+    ${PROJECT_SOURCE_DIR}/src/analysis/stats_builder.cpp
+    ${PROJECT_SOURCE_DIR}/src/analysis/anomaly_detector.cpp
 )
 
 # Test executable
@@ -45,6 +48,7 @@ add_executable(unit_tests
     unit/test_parsing.cpp
     unit/test_analysis.cpp
     unit/test_episode_builder.cpp
+    unit/test_stats.cpp
     ${COMMON_SOURCES}
 )
 
