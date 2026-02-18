@@ -33,6 +33,9 @@ add_executable(log_narrator
     src/rules/builtin/crash_loop_rule.cpp
     src/rules/builtin/retry_to_timeout_rule.cpp
     src/rules/builtin/error_burst_after_change_rule.cpp
+    src/narrative/narrator.cpp
+    src/narrative/markdown_writer.cpp
+    src/narrative/json_writer.cpp
 )
 
 target_include_directories(log_narrator

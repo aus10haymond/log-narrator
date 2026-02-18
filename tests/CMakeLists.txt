@@ -35,6 +35,9 @@ set(COMMON_SOURCES
     ${PROJECT_SOURCE_DIR}/src/rules/builtin/crash_loop_rule.cpp
     ${PROJECT_SOURCE_DIR}/src/rules/builtin/retry_to_timeout_rule.cpp
     ${PROJECT_SOURCE_DIR}/src/rules/builtin/error_burst_after_change_rule.cpp
+    ${PROJECT_SOURCE_DIR}/src/narrative/narrator.cpp
+    ${PROJECT_SOURCE_DIR}/src/narrative/markdown_writer.cpp
+    ${PROJECT_SOURCE_DIR}/src/narrative/json_writer.cpp
 )
 
 # Test executable
@@ -54,6 +57,7 @@ add_executable(unit_tests
     unit/test_episode_builder.cpp
     unit/test_stats.cpp
     unit/test_rules.cpp
+    unit/test_narrative.cpp
     ${COMMON_SOURCES}
 )
 
