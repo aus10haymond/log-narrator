@@ -78,3 +78,21 @@ target_link_libraries(unit_tests
 include(CTest)
 include(Catch)
 catch_discover_tests(unit_tests)
+
+# Integration tests
+add_executable(integration_tests
+    integration/test_golden_reports.cpp
+    ${COMMON_SOURCES}
+)
+
+target_include_directories(integration_tests
+    PRIVATE
+        ${PROJECT_SOURCE_DIR}/include
+)
+
+target_link_libraries(integration_tests
+    PRIVATE
+        Catch2::Catch2WithMain
+)
+
+catch_discover_tests(integration_tests)
