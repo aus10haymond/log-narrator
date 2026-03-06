@@ -14,6 +14,9 @@ add_executable(log_narrator
     src/main.cpp
     src/core/source_ref.cpp
     src/core/severity.cpp
+    src/core/logger.cpp
+    src/cli/args.cpp
+    src/cli/app.cpp
     src/io/file_reader.cpp
     src/io/dir_scanner.cpp
     src/io/stdin_reader.cpp
@@ -29,6 +32,7 @@ add_executable(log_narrator
     src/analysis/stats.cpp
     src/analysis/stats_builder.cpp
     src/analysis/anomaly_detector.cpp
+    src/analysis/window.cpp
     src/rules/rule_registry.cpp
     src/rules/builtin/crash_loop_rule.cpp
     src/rules/builtin/retry_to_timeout_rule.cpp
