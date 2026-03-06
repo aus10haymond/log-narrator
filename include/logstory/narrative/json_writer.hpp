@@ -1,13 +1,11 @@
 #pragma once
 
 #include "logstory/narrative/report.hpp"
+#include "logstory/narrative/schema_version.hpp"
 #include <string>
 #include <ostream>
 
 namespace logstory::narrative {
-
-// Schema version for JSON output
-constexpr int kSchemaVersion = 1;
 
 // Writes reports in JSON format
 class JSONWriter {

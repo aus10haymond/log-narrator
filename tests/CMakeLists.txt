@@ -38,6 +38,8 @@ set(COMMON_SOURCES
     ${PROJECT_SOURCE_DIR}/src/narrative/narrator.cpp
     ${PROJECT_SOURCE_DIR}/src/narrative/markdown_writer.cpp
     ${PROJECT_SOURCE_DIR}/src/narrative/json_writer.cpp
+    ${PROJECT_SOURCE_DIR}/src/narrative/timeline_writer.cpp
+    ${PROJECT_SOURCE_DIR}/src/io/output_manager.cpp
 )
 
 # Test executable
@@ -58,6 +60,7 @@ add_executable(unit_tests
     unit/test_stats.cpp
     unit/test_rules.cpp
     unit/test_narrative.cpp
+    unit/test_output_phase10.cpp
     ${COMMON_SOURCES}
 )
 

@@ -36,6 +36,8 @@ add_executable(log_narrator
     src/narrative/narrator.cpp
     src/narrative/markdown_writer.cpp
     src/narrative/json_writer.cpp
+    src/narrative/timeline_writer.cpp
+    src/io/output_manager.cpp
 )
 
 target_include_directories(log_narrator
